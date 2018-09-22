@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BongoCat1", "BongoCat1\BongoCat1.csproj", "{4F83DA18-6536-46DE-9854-33D1FF23E6A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BongoCat", "BongoCat\BongoCat.csproj", "{97164F86-0DDE-4696-8C3B-93DE016E0A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F83DA18-6536-46DE-9854-33D1FF23E6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F83DA18-6536-46DE-9854-33D1FF23E6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F83DA18-6536-46DE-9854-33D1FF23E6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F83DA18-6536-46DE-9854-33D1FF23E6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97164F86-0DDE-4696-8C3B-93DE016E0A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97164F86-0DDE-4696-8C3B-93DE016E0A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97164F86-0DDE-4696-8C3B-93DE016E0A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97164F86-0DDE-4696-8C3B-93DE016E0A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D4C6E58D-1B50-470E-8C73-F232A5D1AEF5}
+		SolutionGuid = {F3D5CA7C-B029-4CBD-85EA-8274F5544C7D}
 	EndGlobalSection
 EndGlobal

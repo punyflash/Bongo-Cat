@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BongoCat1.Properties {
+namespace BongoCat.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace BongoCat1.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BongoCat1.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BongoCat.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_bongo {
+        internal static System.Drawing.Bitmap bongo {
             get {
-                object obj = ResourceManager.GetObject("cat_bongo", resourceCulture);
+                object obj = ResourceManager.GetObject("bongo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_controller {
+        internal static System.Drawing.Bitmap cat {
             get {
-                object obj = ResourceManager.GetObject("cat_controller", resourceCulture);
+                object obj = ResourceManager.GetObject("cat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_keyboard {
+        internal static System.Drawing.Bitmap cat_table {
             get {
-                object obj = ResourceManager.GetObject("cat_keyboard", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_table", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_table_bongo {
+        internal static System.Drawing.Bitmap cat_table_wink {
             get {
-                object obj = ResourceManager.GetObject("cat_table_bongo", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_table_wink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_table_controller {
+        internal static System.Drawing.Bitmap cat_wink {
             get {
-                object obj = ResourceManager.GetObject("cat_table_controller", resourceCulture);
+                object obj = ResourceManager.GetObject("cat_wink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,29 +113,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cat_table_keyboard {
+        internal static System.Drawing.Bitmap controller {
             get {
-                object obj = ResourceManager.GetObject("cat_table_keyboard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
-        /// </summary>
-        internal static byte[] Gma_System_MouseKeyHook {
-            get {
-                object obj = ResourceManager.GetObject("Gma_System_MouseKeyHook", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap not_pressed_1 {
-            get {
-                object obj = ResourceManager.GetObject("not_pressed_1", resourceCulture);
+                object obj = ResourceManager.GetObject("controller", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +123,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap not_pressed_2 {
+        internal static System.Drawing.Bitmap keyboard {
             get {
-                object obj = ResourceManager.GetObject("not_pressed_2", resourceCulture);
+                object obj = ResourceManager.GetObject("keyboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +133,9 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pressed_1 {
+        internal static System.Drawing.Bitmap pressed_left {
             get {
-                object obj = ResourceManager.GetObject("pressed_1", resourceCulture);
+                object obj = ResourceManager.GetObject("pressed_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +143,49 @@ namespace BongoCat1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pressed_2 {
+        internal static System.Drawing.Bitmap pressed_left_wave {
             get {
-                object obj = ResourceManager.GetObject("pressed_2", resourceCulture);
+                object obj = ResourceManager.GetObject("pressed_left_wave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pressed_right {
+            get {
+                object obj = ResourceManager.GetObject("pressed_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pressed_right_wave {
+            get {
+                object obj = ResourceManager.GetObject("pressed_right_wave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unpressed_left {
+            get {
+                object obj = ResourceManager.GetObject("unpressed_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unpressed_right {
+            get {
+                object obj = ResourceManager.GetObject("unpressed_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
