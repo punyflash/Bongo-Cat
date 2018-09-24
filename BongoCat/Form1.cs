@@ -13,6 +13,11 @@ namespace BongoCat
         
         private StringCollection right_pressed = new StringCollection();
         private StringCollection left_pressed = new StringCollection();
+        public StringCollection right = new StringCollection();
+        public StringCollection left = new StringCollection();
+        public bool mouse = Properties.Settings.Default.Mouse;
+        public bool table = Properties.Settings.Default.Table;
+
         public bool settings = false;
 
         public App()
@@ -31,6 +36,10 @@ namespace BongoCat
             SetInstrument(Properties.Settings.Default.Instrument);
 
             Cat.BackColor = Properties.Settings.Default.Background;
+
+            foreach (string s in Properties.Settings.Default.Right) right.Add(s);
+            foreach (string s in Properties.Settings.Default.Left) left.Add(s);
+
             Winking();
         }
 
@@ -62,7 +71,7 @@ namespace BongoCat
                 {
                     Random rnd = new Random();
                     await Task.Delay(rnd.Next(3000, 7000));
-                    if (Properties.Settings.Default.Table)
+                    if (table)
                     {
                         Cat.BackgroundImage = Properties.Resources.cat_wink;
                         await Task.Delay(rnd.Next(100, 250));
@@ -79,17 +88,18 @@ namespace BongoCat
         }
         private async void RightHandPress(string Key)
         {
-            await Task.Run(async () =>
+            if (!right_pressed.Contains(Key))
             {
-                if (!right_pressed.Contains(Key))
+                right_pressed.Add(Key);
+                Right.Image = Properties.Resources.pressed_right_wave;
+                await Task.Run(async () =>
                 {
-                    right_pressed.Add(Key);
-                    Right.Image = Properties.Resources.pressed_right_wave;
                     await Task.Delay(100);
-                    if(right_pressed.Contains(Key)) Right.Image = Properties.Resources.pressed_right;
+                    if(right_pressed.Count>0) Right.Image = Properties.Resources.pressed_right;
                     else Right.Image = Properties.Resources.unpressed_right;
-                }
-            });
+                });
+            }
+            
         }
         private void RightHandUnpress(string Key)
         {
@@ -98,17 +108,18 @@ namespace BongoCat
         }
         private async void LeftHandPress(string Key)
         {
-            await Task.Run(async () =>
+            if (!left_pressed.Contains(Key))
             {
-                if (!left_pressed.Contains(Key))
+                left_pressed.Add(Key);
+                Left.Image = Properties.Resources.pressed_left_wave;
+                await Task.Run(async () =>
                 {
-                    left_pressed.Add(Key);
-                    Left.Image = Properties.Resources.pressed_left_wave;
                     await Task.Delay(100);
-                    if (left_pressed.Contains(Key)) Left.Image = Properties.Resources.pressed_left;
+                    if (left_pressed.Count>0) Left.Image = Properties.Resources.pressed_left;
                     else Left.Image = Properties.Resources.unpressed_left;
-                }
-            });
+                });
+            }
+            
         }
         private void LeftHandUnpress(string Key)
         {
@@ -117,8 +128,8 @@ namespace BongoCat
         }
         private void HookKeyDown(object sender, KeyEventArgs e)
         {
-            if (Properties.Settings.Default.Right.Contains(e.KeyCode.ToString())) RightHandPress(e.KeyCode.ToString());
-            if (Properties.Settings.Default.Left.Contains(e.KeyCode.ToString())) LeftHandPress(e.KeyCode.ToString());
+            if (right.Contains(e.KeyCode.ToString())) RightHandPress(e.KeyCode.ToString());
+            if (left.Contains(e.KeyCode.ToString())) LeftHandPress(e.KeyCode.ToString());
         }
         private void HookKeyUp(object sender, KeyEventArgs e)
         {
@@ -127,7 +138,7 @@ namespace BongoCat
         }
         private void HookMouseDown(object sender, MouseEventArgs e)
         {
-            if (!Properties.Settings.Default.Mouse) return;
+            if (!mouse) return;
             if (e.Button == MouseButtons.Left) RightHandPress(e.Button.ToString());
             if (e.Button == MouseButtons.Right) LeftHandPress(e.Button.ToString());
         }

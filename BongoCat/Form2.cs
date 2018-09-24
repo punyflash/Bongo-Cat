@@ -83,11 +83,13 @@ namespace BongoCat
             if (Mouse.Checked)
             {
                 Properties.Settings.Default.Mouse = true;
+                app.mouse = true;
                 Properties.Settings.Default.Save();
             }
             else
             {
                 Properties.Settings.Default.Mouse = false;
+                app.mouse = false;
                 Properties.Settings.Default.Save();
             }
         }
@@ -96,12 +98,14 @@ namespace BongoCat
             if (Table.Checked)
             {
                 Properties.Settings.Default.Table = true;
+                app.table = true;
                 Properties.Settings.Default.Save();
                 app.TransparentTable(true);
             }
             else
             {
                 Properties.Settings.Default.Table = false;
+                app.table = false;
                 Properties.Settings.Default.Save();
                 app.TransparentTable(false);
             }
@@ -112,9 +116,10 @@ namespace BongoCat
             if (right_trigger)
             {
                 right_trigger = false;
-                if (!Properties.Settings.Default.Right.Contains(e.KeyCode.ToString()))
+                if (!app.right.Contains(e.KeyCode.ToString()))
                 {
                     Properties.Settings.Default.Right.Add(e.KeyCode.ToString());
+                    app.right.Add(e.KeyCode.ToString());
                     Properties.Settings.Default.Save();
                     Right.Items.Add(e.KeyCode.ToString());
                 }
@@ -123,9 +128,10 @@ namespace BongoCat
             if (left_trigger)
             {
                 left_trigger = false;
-                if (!Properties.Settings.Default.Left.Contains(e.KeyCode.ToString()))
+                if (!app.left.Contains(e.KeyCode.ToString()))
                 {
                     Properties.Settings.Default.Left.Add(e.KeyCode.ToString());
+                    app.left.Add(e.KeyCode.ToString());
                     Properties.Settings.Default.Save();
                     Left.Items.Add(e.KeyCode.ToString());
                 }
@@ -138,6 +144,7 @@ namespace BongoCat
             if (index != ListBox.NoMatches)
             {
                 Properties.Settings.Default.Right.RemoveAt(index);
+                app.right.RemoveAt(index);
                 Properties.Settings.Default.Save();
                 Right.Items.RemoveAt(index);
             }
@@ -148,6 +155,7 @@ namespace BongoCat
             if (index != ListBox.NoMatches)
             {
                 Properties.Settings.Default.Left.RemoveAt(index);
+                app.left.RemoveAt(index);
                 Properties.Settings.Default.Save();
                 Left.Items.RemoveAt(index);
             }
