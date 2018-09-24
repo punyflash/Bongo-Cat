@@ -71,18 +71,14 @@ namespace BongoCat
                 {
                     Random rnd = new Random();
                     await Task.Delay(rnd.Next(3000, 7000));
-                    if (table)
-                    {
-                        Cat.BackgroundImage = Properties.Resources.cat_wink;
-                        await Task.Delay(rnd.Next(100, 250));
-                        Cat.BackgroundImage = Properties.Resources.cat;
-                    }
-                    else
-                    {
-                        Cat.BackgroundImage = Properties.Resources.cat_table_wink;
-                        await Task.Delay(rnd.Next(100, 250));
-                        Cat.BackgroundImage = Properties.Resources.cat_table;
-                    }
+
+                    if (table) Cat.BackgroundImage = Properties.Resources.cat_wink;
+                    else Cat.BackgroundImage = Properties.Resources.cat_table_wink;
+
+                    await Task.Delay(rnd.Next(100, 250));
+
+                    if(table) Cat.BackgroundImage = Properties.Resources.cat;
+                    else Cat.BackgroundImage = Properties.Resources.cat_table;
                 }
             });
         }

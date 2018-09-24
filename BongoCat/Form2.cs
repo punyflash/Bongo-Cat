@@ -22,14 +22,12 @@ namespace BongoCat
             this.app = app;
             Location = new Point(app.Location.X + 25, app.Location.Y + 25);
             InitializeComponent();
-            foreach (string s in Properties.Settings.Default.Right)
-                Right.Items.Add(s);
-            foreach (string s in Properties.Settings.Default.Left)
-                Left.Items.Add(s);
-            Background.BackColor = Properties.Settings.Default.Background;
+            foreach (string s in app.right) Right.Items.Add(s);
+            foreach (string s in app.left) Left.Items.Add(s);
+            Background.BackColor = app.Cat.BackColor;
             Instrument.Text = Properties.Settings.Default.Instrument;
-            if (Properties.Settings.Default.Table) Table.Checked = true;
-            if (Properties.Settings.Default.Mouse) Mouse.Checked = true;
+            if (app.table) Table.Checked = true;
+            if (app.mouse) Mouse.Checked = true;
 
             KeyPreview = true;
             this.KeyDown += new KeyEventHandler(Settings_KeyDown);
@@ -98,16 +96,16 @@ namespace BongoCat
             if (Table.Checked)
             {
                 Properties.Settings.Default.Table = true;
-                app.table = true;
                 Properties.Settings.Default.Save();
-                app.TransparentTable(true);
+                app.table = true;
+                app.TransparentTable(app.table);
             }
             else
             {
                 Properties.Settings.Default.Table = false;
-                app.table = false;
                 Properties.Settings.Default.Save();
-                app.TransparentTable(false);
+                app.table = false;
+                app.TransparentTable(app.table);
             }
         }
 
