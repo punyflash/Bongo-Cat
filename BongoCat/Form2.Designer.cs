@@ -43,6 +43,28 @@
             this.Left = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Right = new System.Windows.Forms.ListBox();
+            this.Piano = new System.Windows.Forms.TabPage();
+            this.pianoTable = new System.Windows.Forms.CheckBox();
+            this.pianoBackground = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -50,12 +72,16 @@
             this.Default.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.Piano.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Modes
             // 
             this.Modes.Controls.Add(this.Default);
+            this.Modes.Controls.Add(this.Piano);
             this.Modes.Location = new System.Drawing.Point(0, 0);
             this.Modes.Name = "Modes";
             this.Modes.SelectedIndex = 0;
@@ -223,6 +249,235 @@
             this.Right.TabIndex = 0;
             this.Right.TabStop = false;
             // 
+            // Piano
+            // 
+            this.Piano.Controls.Add(this.pianoTable);
+            this.Piano.Controls.Add(this.pianoBackground);
+            this.Piano.Controls.Add(this.label12);
+            this.Piano.Controls.Add(this.groupBox4);
+            this.Piano.Controls.Add(this.groupBox3);
+            this.Piano.Location = new System.Drawing.Point(4, 22);
+            this.Piano.Name = "Piano";
+            this.Piano.Size = new System.Drawing.Size(238, 187);
+            this.Piano.TabIndex = 1;
+            this.Piano.Text = "Piano";
+            this.Piano.UseVisualStyleBackColor = true;
+            // 
+            // pianoTable
+            // 
+            this.pianoTable.AutoSize = true;
+            this.pianoTable.Location = new System.Drawing.Point(154, 131);
+            this.pianoTable.Name = "pianoTable";
+            this.pianoTable.Size = new System.Drawing.Size(74, 17);
+            this.pianoTable.TabIndex = 4;
+            this.pianoTable.Text = "Hide table";
+            this.pianoTable.UseVisualStyleBackColor = true;
+            this.pianoTable.CheckedChanged += new System.EventHandler(this.pianoTable_CheckedChanged);
+            // 
+            // pianoBackground
+            // 
+            this.pianoBackground.Location = new System.Drawing.Point(8, 148);
+            this.pianoBackground.Name = "pianoBackground";
+            this.pianoBackground.Size = new System.Drawing.Size(220, 23);
+            this.pianoBackground.TabIndex = 3;
+            this.pianoBackground.UseVisualStyleBackColor = true;
+            this.pianoBackground.Click += new System.EventHandler(this.pianoBackground_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(9, 132);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 13);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Background:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button8);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.button7);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.button5);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Location = new System.Drawing.Point(118, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(110, 117);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Left Hand";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(44, 87);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(60, 23);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 92);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Key8";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(44, 63);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(60, 23);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Key7";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(44, 39);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(60, 23);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Key6";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(44, 15);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(60, 23);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(31, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Key5";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(8, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(110, 117);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Right Hand";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(44, 87);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(60, 23);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 92);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Key4";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(44, 63);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(60, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Key3";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(44, 39);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(60, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Key2";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(44, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Key1";
+            // 
             // statusStrip1
             // 
             this.statusStrip1.AllowMerge = false;
@@ -269,6 +524,12 @@
             this.Default.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.Piano.ResumeLayout(false);
+            this.Piano.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -296,5 +557,27 @@
         private System.Windows.Forms.ListBox Left;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox Right;
+        private System.Windows.Forms.TabPage Piano;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button pianoBackground;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox pianoTable;
     }
 }

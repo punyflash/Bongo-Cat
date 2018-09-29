@@ -29,33 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(App));
-            this.Left = new System.Windows.Forms.PictureBox();
-            this.Right = new System.Windows.Forms.PictureBox();
+            this.Hands = new System.Windows.Forms.PictureBox();
             this.Cat = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Left)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hands)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cat)).BeginInit();
             this.SuspendLayout();
             // 
-            // Left
+            // Hands
             // 
-            this.Left.BackColor = System.Drawing.Color.Transparent;
-            this.Left.Image = global::BongoCat.Properties.Resources.unpressed_left;
-            this.Left.Location = new System.Drawing.Point(270, 0);
-            this.Left.Name = "Left";
-            this.Left.Size = new System.Drawing.Size(270, 350);
-            this.Left.TabIndex = 2;
-            this.Left.TabStop = false;
-            // 
-            // Right
-            // 
-            this.Right.BackColor = System.Drawing.Color.Transparent;
-            this.Right.Image = global::BongoCat.Properties.Resources.unpressed_right;
-            this.Right.Location = new System.Drawing.Point(0, 0);
-            this.Right.Name = "Right";
-            this.Right.Size = new System.Drawing.Size(270, 350);
-            this.Right.TabIndex = 1;
-            this.Right.TabStop = false;
+            this.Hands.BackColor = System.Drawing.Color.Transparent;
+            this.Hands.Location = new System.Drawing.Point(0, 0);
+            this.Hands.Name = "Hands";
+            this.Hands.Size = new System.Drawing.Size(540, 350);
+            this.Hands.TabIndex = 1;
+            this.Hands.TabStop = false;
             // 
             // Cat
             // 
@@ -72,8 +59,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 350);
-            this.Controls.Add(this.Left);
-            this.Controls.Add(this.Right);
+            this.Controls.Add(this.Hands);
             this.Controls.Add(this.Cat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -81,16 +67,14 @@
             this.MinimizeBox = false;
             this.Name = "App";
             this.Text = "Bongo Cat | Press \'O\' to open settings";
-            ((System.ComponentModel.ISupportInitialize)(this.Left)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hands)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cat)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox Right;
-        private System.Windows.Forms.PictureBox Left;
+        private System.Windows.Forms.PictureBox Hands;
         public System.Windows.Forms.PictureBox Cat;
     }
 }

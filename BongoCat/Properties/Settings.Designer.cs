@@ -28,12 +28,12 @@ namespace BongoCat.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
             "tring>Z</string>\r\n</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection Right {
+        public global::System.Collections.Specialized.StringCollection defaultRight {
             get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["Right"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["defaultRight"]));
             }
             set {
-                this["Right"] = value;
+                this["defaultRight"] = value;
             }
         }
         
@@ -42,60 +42,192 @@ namespace BongoCat.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
             "tring>X</string>\r\n</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection Left {
+        public global::System.Collections.Specialized.StringCollection defaultLeft {
             get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["Left"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["defaultLeft"]));
             }
             set {
-                this["Left"] = value;
+                this["defaultLeft"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Mouse {
+        public bool defaultMouse {
             get {
-                return ((bool)(this["Mouse"]));
+                return ((bool)(this["defaultMouse"]));
             }
             set {
-                this["Mouse"] = value;
+                this["defaultMouse"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Table {
+        public bool defaultTable {
             get {
-                return ((bool)(this["Table"]));
+                return ((bool)(this["defaultTable"]));
             }
             set {
-                this["Table"] = value;
+                this["defaultTable"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("128, 255, 255")]
-        public global::System.Drawing.Color Background {
+        public global::System.Drawing.Color defaultBackground {
             get {
-                return ((global::System.Drawing.Color)(this["Background"]));
+                return ((global::System.Drawing.Color)(this["defaultBackground"]));
             }
             set {
-                this["Background"] = value;
+                this["defaultBackground"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("None")]
-        public string Instrument {
+        public string defaultInstrument {
             get {
-                return ((string)(this["Instrument"]));
+                return ((string)(this["defaultInstrument"]));
             }
             set {
-                this["Instrument"] = value;
+                this["defaultInstrument"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Default")]
+        public string Mode {
+            get {
+                return ((string)(this["Mode"]));
+            }
+            set {
+                this["Mode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool pianoTable {
+            get {
+                return ((bool)(this["pianoTable"]));
+            }
+            set {
+                this["pianoTable"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("A")]
+        public string pianoKey1 {
+            get {
+                return ((string)(this["pianoKey1"]));
+            }
+            set {
+                this["pianoKey1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("S")]
+        public string pianoKey2 {
+            get {
+                return ((string)(this["pianoKey2"]));
+            }
+            set {
+                this["pianoKey2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D")]
+        public string pianoKey3 {
+            get {
+                return ((string)(this["pianoKey3"]));
+            }
+            set {
+                this["pianoKey3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("F")]
+        public string pianoKey4 {
+            get {
+                return ((string)(this["pianoKey4"]));
+            }
+            set {
+                this["pianoKey4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("J")]
+        public string pianoKey5 {
+            get {
+                return ((string)(this["pianoKey5"]));
+            }
+            set {
+                this["pianoKey5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("K")]
+        public string pianoKey6 {
+            get {
+                return ((string)(this["pianoKey6"]));
+            }
+            set {
+                this["pianoKey6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("L")]
+        public string pianoKey7 {
+            get {
+                return ((string)(this["pianoKey7"]));
+            }
+            set {
+                this["pianoKey7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Oem1")]
+        public string pianoKey8 {
+            get {
+                return ((string)(this["pianoKey8"]));
+            }
+            set {
+                this["pianoKey8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("128, 255, 255")]
+        public global::System.Drawing.Color pianoBackground {
+            get {
+                return ((global::System.Drawing.Color)(this["pianoBackground"]));
+            }
+            set {
+                this["pianoBackground"] = value;
             }
         }
     }
